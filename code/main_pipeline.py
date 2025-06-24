@@ -85,7 +85,7 @@ def main():
     audio_path = "latex_data/3_audio/tts_mathbridge_00/29.mp3"
     error_texts = transcribe_one(audio_path)
     # error_texts = ["n 프라임","n 푸라임"] # list str 형태.
-    model_path = "minjun/ke-t5-base"
+    model_path = "ke-t5-base"
     
     device = torch.device("cuda")
 
@@ -93,8 +93,8 @@ def main():
     model_correct = T5ForConditionalGeneration.from_pretrained(model_path)
     model_tolatex = T5ForConditionalGeneration.from_pretrained(model_path)
     
-    corrector_weight = "minjun/corrector_model_checkpoints_t5base_10k/best_model.pt"
-    translator_weight = "minjun/translator_model_checkpoints_t5base_10k/best_model.pt"
+    corrector_weight = "corrector_best_model.pt"
+    translator_weight = "translator_best_model.pt"
     
     corrector_checkpoint = torch.load(corrector_weight, map_location=device,weights_only=False)
     translator_checkpoint = torch.load(translator_weight, map_location=device,weights_only=False)
