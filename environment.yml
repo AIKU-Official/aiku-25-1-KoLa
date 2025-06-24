@@ -1,4 +1,0 @@
-name: TK_model
-channels:
-  - defaults
-prefix: /home/aikusrv01/anaconda3/envs/TK_model
