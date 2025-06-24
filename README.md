@@ -20,7 +20,7 @@ KoLa는 Whisper 기반의 음성 인식(ASR) 모듈을 사용합니다.
 
 ## 환경 설정
 ```
-  conda env create -f environment.yml
+  pip install -r requirements.txt
 ```
 ## 사용 방법
 audio file 업로드 후 audio_path 경로 수정 => main_pipeline.py 실행
