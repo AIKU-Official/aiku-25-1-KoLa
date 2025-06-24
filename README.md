@@ -14,15 +14,10 @@ KoLa utilizes a Whisper-based ASR module followed sequentially by two compact mo
 ![KoLa Model Architecture](src/model_fig.jpg)
 
 
-## 환경 설정
-
-(Requirements, Anaconda, Docker 등 프로젝트를 사용하는데에 필요한 요구 사항을 나열해주세요)
-
-## 사용 방법
-
-(프로젝트 실행 방법 (명령어 등)을 적어주세요.)
-
 ## 예시 결과
+
+![Results](src/experiment.jpg)
+
 
 - 한국어 음성을 받고, 대응되는 LaTeX를 출력합니다.
 
