@@ -5,11 +5,16 @@
 
 ## 소개
 
-We introduce KoLa, a lightweight, modular pipeline designed to translate Korean mathematical speech directly into LaTeX expressions. Central to our contribution is KoTeX-100K, KoTeX-400K a newly constructed dataset containing 100,000 aligned triples of Korean mathematical speech audio, textual transcriptions, and corresponding \LaTeX formulas. 
+Pipeline: KoLa는 한국어 수학 음성을 LaTeX 수식으로 직접 변환하기 위해 설계된 가볍고 모듈화된 파이프라인입니다!
+Dataset Generation: 한국어 수학 음성, 텍스트 전사, 그리고 이에 대응하는 LaTeX 수식으로 이루어진 10만 개 규모의 병렬 데이터셋인 KoTeX-100K와 KoTeX-400K를 구축했습니다!
 
 ## 방법론
 
-KoLa utilizes a Whisper-based ASR module followed sequentially by two compact modules: a text-based Error Corrector and a LaTeX Translator. Both modules are independently trained on KoTeX 100K, KoTeX 400K enabling robust correction of ASR errors and flexible improvement of formula transcription quality. Our findings demonstrate the feasibility of high-quality mathematical speech transcription in Korean, highlighting opportunities for extending this approach to multilingual mathematical speech understanding. We publicly release our code and dataset to facilitate further research.
+KoLa는 Whisper 기반의 음성 인식(ASR) 모듈을 사용합니다.
+이후, 텍스트 기반 Error Corrector와 LaTeX Translator라는 두 개의 T5-base 기반 모듈이 순차적으로 동작합니다.
+이 두 모듈은 KoTeX-100K와 KoTeX-400K 데이터셋을 기반으로 독립적으로 학습됩니다.
+이를 통해, 음성 인식 오류를 효율적으로 보정하고 LaTex Translation 성능을 향상시켰습니다.
+(SOTA또한 달성했습니다!!:) )
 
 ![KoLa Model Architecture](src/model_fig.jpg)
 
