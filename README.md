@@ -1,6 +1,6 @@
 # KoLa: Korean speech to LaTeX extraction Using small LM Modules
 
-📢 2025년 1학 [AIKU](https://github.com/AIKU-Official) 활동으로 진행한 프로젝트입니다
+📢 2025년 1학기 [AIKU](https://github.com/AIKU-Official) 활동으로 진행한 프로젝트입니다
 🎉 2025년 1학기 AIKU Conference 열심히상 수상!
 
 ## 소개
